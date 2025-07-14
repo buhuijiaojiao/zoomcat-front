@@ -1,6 +1,6 @@
 <template>
   <div class="home-container">
-    <!-- Header 1111-->
+    <!-- Header -->
     <header class="header">
       <div class="nav-container">
         <div class="logo">
