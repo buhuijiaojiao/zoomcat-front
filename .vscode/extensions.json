@@ -13,6 +13,6 @@
     "sdras.vue-vscode-snippets", // Vue 常用代码片段（模板、生命周期、指令等），提升编码效率
     "mhutchie.git-graph", // 可视化 Git 提交历史与分支结构，协作开发时查看历史更直观
     "mikestead.dotenv", // .env 文件语法高亮与智能提示，管理环境变量更安全、不易出错
-    "zhubin.git-commit-template-helper", // Git 提交模板助手，确保提交信息规范化
+    "zhubin.git-commit-template-helper" // Git 提交模板助手，确保提交信息规范化
   ]
 }

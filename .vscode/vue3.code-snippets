@@ -1,7 +1,7 @@
 {
   "Print Zoomcat Vue3 SFC page": {
     "scope": "vue",
-    "prefix": ["v3","page","view"],
+    "prefix": ["v3", "page", "view"],
     "body": [
       "<script lang=\"ts\" setup>",
       "//$1",
@@ -11,13 +11,13 @@
       "    <!-- page only one root element -->",
       "    $2",
       "  </div>",
-      "</template>\n",
-    ],
+      "</template>\n"
+    ]
   },
 
   "Print Zoomcat Vue3 SFC Component": {
     "scope": "vue",
-    "prefix": ["component","comp"],
+    "prefix": ["component", "comp"],
     "body": [
       "<script lang=\"ts\" setup>",
       "//$1",
@@ -26,26 +26,22 @@
       "  <div class=\"\">",
       "    $2",
       "  </div>",
-      "</template>\n",
-    ],
+      "</template>\n"
+    ]
   },
   "Print Zoomcat style": {
     "scope": "vue",
     "prefix": "st",
-    "body": ["<style scoped>", "//", "</style>\n"],
+    "body": ["<style scoped>", "//", "</style>\n"]
   },
   "Print Zoomcat script": {
     "scope": "vue",
     "prefix": "sc",
-    "body": ["<script lang=\"ts\" setup>", "//$3", "</script>\n"],
+    "body": ["<script lang=\"ts\" setup>", "//$3", "</script>\n"]
   },
   "Print Zoomcat template": {
     "scope": "vue",
     "prefix": "te",
-    "body": [
-      "<template>",
-      "  <div class=\"\">$1</div>",
-      "</template>\n",
-    ],
-  },
+    "body": ["<template>", "  <div class=\"\">$1</div>", "</template>\n"]
+  }
 }
