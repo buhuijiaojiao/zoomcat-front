@@ -1,0 +1,37 @@
+name: feature
+on:
+  push:
+    branches:
+      - 'feature/**' # 监听所有以 feature/ 开头的分支 push
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true # 同一分支的旧运行会被自动取消，节省资源
+
+jobs:
+  job-1:
+    name: job-1
+    runs-on: ubuntu-22.04
+    environment: preview
+    steps:
+      # 检出本分支代码
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        # 安装依赖
+      - name: Install dependencies
+        run: pnpm install
+        # 代码修复
+      - name: Run lint
+        run: pnpm run lint
+        # 代码格式修复
+      - name: Run format
+        run: pnpm run format
+        # 构建
+      - name: Build project
+        run: pnpm run build
+        # 发布到预览环境
+      - name: Deploy Preview
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          # 使用你的 build 输出目录 dist
+          folder: dist 
