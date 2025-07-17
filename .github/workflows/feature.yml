@@ -4,6 +4,11 @@ on:
     branches:
       - 'feature/**' # 监听所有以 feature/ 开头的分支 push
 
+# 开启写权限
+permissions:
+  contents: write
+  pages: write
+
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true # 同一分支的旧运行会被自动取消，节省资源
