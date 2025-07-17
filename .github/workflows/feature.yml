@@ -34,4 +34,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           # 使用你的 build 输出目录 dist
-          folder: dist 
+          folder: dist
