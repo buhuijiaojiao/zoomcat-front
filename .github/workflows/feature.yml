@@ -17,18 +17,26 @@ jobs:
       # 检出本分支代码
       - name: Checkout repo
         uses: actions/checkout@v4
+        # 安装nodejs
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '22'
+        # 安装pnpm
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
         # 安装依赖
       - name: Install dependencies
         run: pnpm install
         # 代码修复
       - name: Run lint
-        run: pnpm run lint
+        run: pnpm lint
         # 代码格式修复
       - name: Run format
-        run: pnpm run format
+        run: pnpm format
         # 构建
       - name: Build project
-        run: pnpm run build
+        run: pnpm build
         # 发布到预览环境
       - name: Deploy Preview
         uses: JamesIves/github-pages-deploy-action@v4
