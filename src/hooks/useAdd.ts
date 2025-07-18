@@ -1,8 +1,8 @@
-import { ref } from "vue";
+import { ref } from 'vue'
 export const useAdd = () => {
-  const a = ref(1);
+  const a = ref(1)
   setInterval(() => {
-    a.value++;
-  }, 1000);
-  return a;
-};
+    a.value++
+  }, 1000)
+  return a
+}

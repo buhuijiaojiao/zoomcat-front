@@ -7,9 +7,21 @@
           <h1>Your Project</h1>
         </div>
         <nav class="nav-menu">
-          <a href="#features" class="nav-link">Features</a>
-          <a href="#about" class="nav-link">About</a>
-          <a href="#contact" class="nav-link">Contact</a>
+          <a
+            href="#features"
+            class="nav-link"
+            >Features</a
+          >
+          <a
+            href="#about"
+            class="nav-link"
+            >About</a
+          >
+          <a
+            href="#contact"
+            class="nav-link"
+            >Contact</a
+          >
         </nav>
       </div>
     </header>
@@ -19,13 +31,20 @@
       <div class="hero-content">
         <h2 class="hero-title">Welcome to Your Project</h2>
         <p class="hero-subtitle">
-          Build something amazing with our powerful tools and intuitive interface
+          Build something amazing with our powerful tools and intuitive
+          interface
         </p>
         <div class="hero-actions">
-          <button class="btn btn-primary" @click="handleGetStarted">
+          <button
+            class="btn btn-primary"
+            @click="handleGetStarted"
+          >
             Get Started
           </button>
-          <button class="btn btn-secondary" @click="handleLearnMore">
+          <button
+            class="btn btn-secondary"
+            @click="handleLearnMore"
+          >
             Learn More
           </button>
         </div>
@@ -33,11 +52,18 @@
     </section>
 
     <!-- Features Section -->
-    <section id="features" class="features">
+    <section
+      id="features"
+      class="features"
+    >
       <div class="container">
         <h3 class="section-title">Key Features</h3>
         <div class="features-grid">
-          <div class="feature-card" v-for="feature in features" :key="feature.id">
+          <div
+            class="feature-card"
+            v-for="feature in features"
+            :key="feature.id"
+          >
             <div class="feature-icon">{{ feature.icon }}</div>
             <h4 class="feature-title">{{ feature.title }}</h4>
             <p class="feature-description">{{ feature.description }}</p>
@@ -50,7 +76,11 @@
     <section class="stats">
       <div class="container">
         <div class="stats-grid">
-          <div class="stat-item" v-for="stat in stats" :key="stat.label">
+          <div
+            class="stat-item"
+            v-for="stat in stats"
+            :key="stat.label"
+          >
             <div class="stat-number">{{ stat.value }}</div>
             <div class="stat-label">{{ stat.label }}</div>
           </div>

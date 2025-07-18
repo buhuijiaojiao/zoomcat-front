@@ -3,13 +3,16 @@
     "Vue.volar", // Vue 3 官方语言服务，提供智能提示、类型推导、模板校验，是 Vue3 项目必装插件
     "vitest.explorer", // 在 VS Code 侧边栏查看并运行 Vitest 单元测试，非常方便管理与调试
     "dbaeumer.vscode-eslint", // ESLint 实时提示，保障 JavaScript/TypeScript 代码质量，团队协作必备
+    /* 
     "EditorConfig.EditorConfig", // 遵从 .editorconfig 配置统一缩进和编码风格，提升多人协作一致性
+    有bug，先不使用
+      */
     "oxc.oxc-vscode", // Rust 驱动的 Oxlint 静态分析器，速度快 50–100×，可替代一部分 ESLint，提升开发效率
     "esbenp.prettier-vscode", // Prettier 自动格式化插件，保持代码风格统一且可读
     "afzalsayed96.icones", // 快速检索并复制 SVG/Iconify 图标，用于 UI 图标插入，非常实用
     "sdras.vue-vscode-snippets", // Vue 常用代码片段（模板、生命周期、指令等），提升编码效率
     "mhutchie.git-graph", // 可视化 Git 提交历史与分支结构，协作开发时查看历史更直观
     "mikestead.dotenv", // .env 文件语法高亮与智能提示，管理环境变量更安全、不易出错
-    "zhubin.git-commit-template-helper", // Git 提交模板助手，确保提交信息规范化
+    "zhubin.git-commit-template-helper" // Git 提交模板助手，确保提交信息规范化
   ]
 }
