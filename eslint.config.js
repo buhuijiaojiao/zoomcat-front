@@ -3,6 +3,7 @@ import globals from 'globals'
 import tseslint from 'typescript-eslint'
 import pluginVue from 'eslint-plugin-vue'
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended'
+import unocss from '@unocss/eslint-config/flat'
 import { defineConfig } from 'eslint/config'
 
 export default defineConfig([
@@ -26,5 +27,12 @@ export default defineConfig([
    *   (使得关于风格全部使用prettier , 防止eslint和prettier左右脑互搏)
    * 一次性设置 eslint-plugin-prettier 和 eslint-config-prettier
    */
-  eslintPluginPrettierRecommended
+  eslintPluginPrettierRecommended,
+  unocss,
+  /**
+   * 编写匹配器规则时通过不了eslint校验
+   */
+  {
+    ignores: ['uno.config.ts']
+  }
 ])

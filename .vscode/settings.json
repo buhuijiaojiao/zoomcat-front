@@ -4,8 +4,12 @@
   "explorer.fileNesting.patterns": {
     "tsconfig.json": "tsconfig.*.json, env.d.ts",
     "vite.config.*": "jsconfig*, vitest.config.*, cypress.config.*, playwright.config.*",
-    "package.json": "package-lock.json, pnpm*, .yarnrc*, yarn*, .eslint*, eslint*, .oxlint*, oxlint*, .prettier*, prettier*, .editorconfig, .simple-git-hooks*, .lintstagedrc*",
+    "package.json": "package-lock.json, pnpm*, .yarnrc*, yarn*, .eslint*, eslint*, .oxlint*, oxlint*, .prettier*, prettier*, .editorconfig, .simple-git-hooks*, .lintstagedrc*, uno*",
     ".env": ".env.*"
+  },
+  "editor.quickSuggestions": {
+    "strings": true,
+    "other": true
   },
   "editor.formatOnSave": true
 }

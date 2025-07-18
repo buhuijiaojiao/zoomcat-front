@@ -3,8 +3,7 @@
 </script>
 
 <template>
-  <div>
-    <!-- page only one root element -->
-    <h1>zoomcat test</h1>
-  </div>
+  <button class="bg-gradient-linear bg-gradient-[135deg,#87ceeb,#4682b4]">
+    演示
+  </button>
 </template>
