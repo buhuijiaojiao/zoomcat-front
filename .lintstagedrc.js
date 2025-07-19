@@ -6,7 +6,7 @@
  */
 
 export default {
-  '**/*.{ts,tsx,js,jsx,vue}': ['eslint  --fix', 'prettier --write'],
+  '*.{ts,tsx,js,jsx,vue}': ['eslint  --fix', 'prettier --write'],
   '!(*.ts|*.tsx|*.js|*.jsx|*.vue)': ['prettier --write']
   //   '**/*.{css,less}': ['stylelint --cache --fix']
 }
